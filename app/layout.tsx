@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     "personal injury calculator",
     "accident settlement estimator",
   ],
+  verification: {
+    google: "qlPMVO_Hb-be3_hFHNT9SBbsHO-b_wCOfWfLmTb4EQc",
+  },
   openGraph: {
     title: `${SITE.year} Car Accident Settlement Calculator | Free`,
     description: "Calculate your car accident settlement value for free. Estimate medical bills, pain and suffering, and lost wages.",
