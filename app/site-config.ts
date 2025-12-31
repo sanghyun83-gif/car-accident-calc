@@ -1,20 +1,20 @@
 // ============================================
-// CAR-ACCIDENT-CALC SITE CONFIGURATION
-// 2025 Car Accident Settlement Calculator
-// 50 State Fault Laws
+// TRUCK-ACCIDENT-CALC SITE CONFIGURATION
+// 2026 Truck Accident Settlement Calculator
+// 18-Wheeler, Semi-Truck, Commercial Truck Claims
 // ============================================
 
-import { Calculator, Scale, FileText, DollarSign, Car, AlertTriangle, Gavel } from 'lucide-react';
+import { Calculator, Scale, FileText, DollarSign, Car, AlertTriangle, Gavel, Truck } from 'lucide-react';
 
 // ============================================
 // SITE METADATA
 // ============================================
 export const SITE = {
-    name: "Car Accident Settlement Calculator",
-    tagline: "Free 2025 Settlement Estimator",
-    description: "Calculate your car accident settlement value for free. Estimate medical bills, pain and suffering, and lost wages. All 50 states with fault law information.",
-    year: 2025,
-    baseUrl: "https://car-accident.mysmartcalculators.com",
+    name: "Truck Accident Settlement Calculator",
+    tagline: "Free 2026 Settlement Estimator",
+    description: "Calculate your truck accident settlement value for free. Estimate 18-wheeler, semi-truck, and commercial vehicle accident compensation. Average settlements $500K-$3M.",
+    year: 2026,
+    baseUrl: "https://truck-accident.mysmartcalculators.com",
 };
 
 // ============================================
@@ -48,12 +48,12 @@ export const SETTLEMENT_CONSTANTS = {
     attorneyBonus: 0.30, // 30% higher with attorney
     attorneyFee: 0.33, // 33% contingency fee
 
-    // Average settlements for reference
+    // Average settlements for truck accidents (higher than car accidents)
     averageSettlements: {
-        minor: { low: 5000, high: 15000 },
-        moderate: { low: 15000, high: 75000 },
-        severe: { low: 75000, high: 250000 },
-        permanent: { low: 250000, high: 1000000 },
+        minor: { low: 25000, high: 100000 },
+        moderate: { low: 100000, high: 500000 },
+        severe: { low: 500000, high: 1500000 },
+        permanent: { low: 1500000, high: 5000000 },
     },
 };
 
@@ -131,33 +131,33 @@ export const CALCULATORS = [
         id: "settlement-calculator",
         name: "Settlement Calculator",
         shortName: "Settlement",
-        description: "Calculate your total accident settlement",
-        longDescription: "Free car accident settlement calculator. Estimate your total compensation including medical bills, lost wages, and pain and suffering.",
+        description: "Calculate your truck accident settlement",
+        longDescription: "Free 2026 truck accident settlement calculator. Estimate your 18-wheeler, semi-truck, or commercial vehicle accident compensation.",
         icon: Calculator,
         category: "legal",
-        keywords: ["car accident settlement calculator", "accident settlement", "car crash calculator"],
+        keywords: ["truck accident settlement calculator", "18 wheeler accident", "semi truck accident"],
         featured: true,
     },
     {
         id: "pain-suffering",
         name: "Pain & Suffering Calculator",
         shortName: "Pain & Suffering",
-        description: "Calculate pain and suffering damages",
-        longDescription: "Calculate non-economic damages for pain and suffering using the multiplier method.",
+        description: "Calculate truck accident pain and suffering",
+        longDescription: "Calculate non-economic damages for truck accident injuries using the multiplier method.",
         icon: Scale,
         category: "legal",
-        keywords: ["pain and suffering calculator", "non-economic damages", "injury compensation"],
+        keywords: ["truck accident pain suffering", "non-economic damages", "trucking injury compensation"],
         featured: true,
     },
     {
         id: "state-laws",
-        name: "State Fault Laws",
+        name: "State Trucking Laws",
         shortName: "State Laws",
-        description: "Compare fault laws by state",
-        longDescription: "Compare at-fault vs no-fault and comparative negligence laws across all 50 states.",
+        description: "Truck accident laws by state",
+        longDescription: "Compare trucking accident laws, FMCSA regulations, and liability rules across all 50 states.",
         icon: Gavel,
         category: "legal",
-        keywords: ["car accident laws by state", "fault laws", "comparative negligence"],
+        keywords: ["truck accident laws by state", "FMCSA regulations", "trucking liability"],
         featured: false,
     },
 ] as const;

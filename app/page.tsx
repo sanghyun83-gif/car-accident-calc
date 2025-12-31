@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SITE, CALCULATORS, SETTLEMENT_CONSTANTS, formatCurrency } from "./site-config";
-import { ArrowRight, Shield, CheckCircle, Car, Scale, AlertTriangle, Gavel } from "lucide-react";
+import { ArrowRight, Shield, CheckCircle, Truck, Scale, AlertTriangle, Gavel } from "lucide-react";
 
 export default function Home() {
   const featuredCalculators = CALCULATORS.filter(c => c.featured);
@@ -13,7 +13,7 @@ export default function Home() {
       <header className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Car className="w-6 h-6 text-red-600" />
+            <Truck className="w-6 h-6 text-red-600" />
             <span className="text-lg font-bold text-slate-800">{SITE.name}</span>
           </div>
           <span className="text-xs text-white bg-red-600 px-3 py-1 rounded-full font-bold">
@@ -27,17 +27,17 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 py-16 text-center">
           <div className="inline-flex items-center gap-2 bg-red-500/20 border border-red-400/50 rounded-full px-4 py-2 mb-6">
             <AlertTriangle className="w-4 h-4 text-red-400" />
-            <span className="text-sm text-red-200">Injured in a Car Accident?</span>
+            <span className="text-sm text-red-200">Injured in a Truck Accident?</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Car Accident Settlement
+            Truck Accident Settlement
             <span className="block text-red-500">Calculator</span>
           </h1>
 
           <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
-            Find out how much your car accident claim is worth. Calculate medical bills,
-            lost wages, and pain & suffering damages.
+            Find out how much your truck accident claim is worth. 18-wheelers, semi-trucks,
+            and commercial vehicles have higher settlements ($500K-$3M average).
           </p>
 
           <Link
@@ -139,7 +139,7 @@ export default function Home() {
       <section className="bg-slate-100 border-y border-slate-200">
         <div className="max-w-4xl mx-auto px-4 py-16">
           <h2 className="text-2xl font-bold text-slate-800 mb-2 text-center">
-            Average Car Accident Settlements
+            Average Truck Accident Settlements
           </h2>
           <p className="text-slate-500 text-center mb-8">
             Settlement values vary based on injury severity
@@ -232,11 +232,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              <Car className="w-5 h-5 text-red-500" />
+              <Truck className="w-5 h-5 text-red-500" />
               <span className="font-semibold">{SITE.name}</span>
             </div>
             <p className="text-sm text-slate-400 text-center">
-              Estimates only. Not legal advice. Consult a personal injury attorney for your specific case.
+              Estimates only. Not legal advice. Consult a truck accident attorney for your specific case.
             </p>
             <p className="text-sm text-slate-500">
               © {SITE.year} {SITE.name}
