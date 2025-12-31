@@ -54,10 +54,10 @@ export default function PainSufferingPage() {
                 {/* Calculator Card */}
                 <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
                     <h1 className="text-xl font-bold text-slate-800 mb-2">
-                        Pain & Suffering Calculator
+                        Truck Accident Pain & Suffering Calculator
                     </h1>
                     <p className="text-sm text-slate-500 mb-6">
-                        Calculate non-economic damages using the multiplier method
+                        Calculate non-economic damages for 18-wheeler and commercial truck injuries
                     </p>
 
                     {/* Inputs */}

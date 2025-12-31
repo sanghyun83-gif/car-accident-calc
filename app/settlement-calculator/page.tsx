@@ -67,7 +67,7 @@ export default function SettlementCalculatorPage() {
                 {/* Calculator Card */}
                 <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
                     <h1 className="text-xl font-bold text-slate-800 mb-2">
-                        Car Accident Settlement Calculator
+                        Truck Accident Settlement Calculator
                     </h1>
                     <p className="text-sm text-slate-500 mb-6">
                         Estimate your total settlement including pain & suffering
@@ -291,37 +291,40 @@ export default function SettlementCalculatorPage() {
                 <section className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
                     <h2 className="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
                         <Info className="w-5 h-5 text-red-500" />
-                        Settlement FAQ
+                        Truck Accident Settlement FAQ
                     </h2>
 
                     <div className="space-y-4 text-sm">
                         <div>
                             <h3 className="font-semibold text-slate-800 mb-1">
-                                How much is my car accident worth?
+                                Why are truck accident settlements higher than car accidents?
                             </h3>
                             <p className="text-slate-600">
-                                Your settlement value depends on medical bills, lost wages,
-                                injury severity, and fault percentage. Use the multiplier method:
-                                Medical Bills × 1.5 to 5x for pain and suffering.
+                                Truck accidents cause more severe injuries due to the massive size difference
+                                (80,000 lbs vs 4,000 lbs). Multiple parties may be liable: trucking company,
+                                driver, cargo loader, and manufacturer. Commercial insurance policies are
+                                typically $1M-$5M, allowing larger settlements.
                             </p>
                         </div>
                         <div>
                             <h3 className="font-semibold text-slate-800 mb-1">
-                                Should I get a lawyer for my car accident?
+                                Who can be held liable in a truck accident?
                             </h3>
                             <p className="text-slate-600">
-                                Studies show accident victims with attorneys receive 30-40% higher
-                                settlements on average, even after attorney fees.
+                                Unlike car accidents, truck accidents often involve multiple liable parties:
+                                the truck driver, trucking company, cargo loading company, truck manufacturer,
+                                and maintenance providers. FMCSA regulations often determine liability.
                             </p>
                         </div>
                         <div>
                             <h3 className="font-semibold text-slate-800 mb-1">
-                                What is pain and suffering?
+                                What is FMCSA and how does it affect my case?
                             </h3>
                             <p className="text-slate-600">
-                                Pain and suffering compensates for physical pain, emotional distress,
-                                and reduced quality of life. It's calculated using a multiplier
-                                (1.5x-5x) of your medical bills based on injury severity.
+                                The Federal Motor Carrier Safety Administration (FMCSA) sets regulations for
+                                commercial trucks: Hours of Service limits, maintenance requirements, and
+                                driver qualifications. Violations (like driving over 11 hours) can prove
+                                negligence and increase your settlement.
                             </p>
                         </div>
                     </div>
@@ -343,8 +346,9 @@ export default function SettlementCalculatorPage() {
                         <AlertCircle className="w-5 h-5 text-red-600 mt-0.5" />
                         <p className="text-xs text-red-800">
                             <strong>Disclaimer:</strong> This is an estimate only. Not legal advice.
-                            Actual settlements vary based on insurance coverage, evidence, and negotiation.
-                            Consult a personal injury attorney for your specific case.
+                            Truck accident cases are complex with multiple liable parties. Commercial
+                            trucking companies have aggressive legal teams. Consult a truck accident
+                            attorney for your specific case.
                         </p>
                     </div>
                 </div>
@@ -360,26 +364,26 @@ export default function SettlementCalculatorPage() {
                         mainEntity: [
                             {
                                 "@type": "Question",
-                                name: "How much is my car accident worth?",
+                                name: "Why are truck accident settlements higher than car accidents?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Your settlement depends on medical bills, lost wages, injury severity, and fault percentage. Use the multiplier method: Medical Bills × 1.5 to 5x for pain and suffering.",
+                                    text: "Truck accidents cause more severe injuries due to size difference (80,000 lbs vs 4,000 lbs). Multiple liable parties and commercial insurance policies of $1M-$5M allow larger settlements.",
                                 },
                             },
                             {
                                 "@type": "Question",
-                                name: "Should I get a lawyer for my car accident?",
+                                name: "Who can be held liable in a truck accident?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Studies show accident victims with attorneys receive 30-40% higher settlements on average, even after attorney fees.",
+                                    text: "Multiple parties may be liable: truck driver, trucking company, cargo loading company, truck manufacturer, and maintenance providers. FMCSA regulations often determine liability.",
                                 },
                             },
                             {
                                 "@type": "Question",
-                                name: "What is pain and suffering in a car accident case?",
+                                name: "What is FMCSA and how does it affect my truck accident case?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Pain and suffering compensates for physical pain, emotional distress, and reduced quality of life. It's typically calculated as 1.5x-5x your medical bills.",
+                                    text: "The Federal Motor Carrier Safety Administration sets regulations for commercial trucks including Hours of Service limits. Violations can prove negligence and increase your settlement.",
                                 },
                             },
                         ],

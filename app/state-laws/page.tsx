@@ -45,10 +45,10 @@ export default function StateLawsPage() {
             <main className="max-w-6xl mx-auto px-4 py-8">
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-bold text-slate-800 mb-2">
-                        Car Accident Fault Laws by State
+                        Truck Accident Fault Laws by State
                     </h1>
                     <p className="text-slate-500">
-                        At-Fault vs No-Fault and Comparative Negligence Rules
+                        At-Fault vs No-Fault, Comparative Negligence, and FMCSA Commercial Truck Rules
                     </p>
                 </div>
 
@@ -108,8 +108,8 @@ export default function StateLawsPage() {
                                         </td>
                                         <td className="px-4 py-3 text-center">
                                             <span className={`px-2 py-1 rounded text-xs font-medium ${state.faultSystem === 'at-fault' ? 'bg-blue-100 text-blue-700' :
-                                                    state.faultSystem === 'no-fault' ? 'bg-green-100 text-green-700' :
-                                                        'bg-purple-100 text-purple-700'
+                                                state.faultSystem === 'no-fault' ? 'bg-green-100 text-green-700' :
+                                                    'bg-purple-100 text-purple-700'
                                                 }`}>
                                                 {state.faultSystem === 'at-fault' ? 'At-Fault' :
                                                     state.faultSystem === 'no-fault' ? 'No-Fault' : 'Choice'}
