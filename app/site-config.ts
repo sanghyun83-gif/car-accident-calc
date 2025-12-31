@@ -14,7 +14,7 @@ export const SITE = {
     tagline: "Free 2025 Settlement Estimator",
     description: "Calculate your car accident settlement value for free. Estimate medical bills, pain and suffering, and lost wages. All 50 states with fault law information.",
     year: 2025,
-    baseUrl: "https://car-accident-calc.vercel.app",
+    baseUrl: "https://car-accident.mysmartcalculators.com",
 };
 
 // ============================================
